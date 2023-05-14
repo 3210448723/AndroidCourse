@@ -43,7 +43,7 @@
 
 #### 层次★
 
-![image-20230510111048274](assets/image-20230510111048274.png)![image-20230511162823935](assets/image-20230511162823935.png)
+![image-20230510111048274](https://img-blog.csdnimg.cn/c5cdd9b291b7446093e46e41d4468203.jpeg)![image-20230511162823935](https://img-blog.csdnimg.cn/bdd5400aaee54414917045cea0551d63.jpeg)
 
 #### 特点
 
@@ -737,15 +737,15 @@ Toast.makeText(Context,Text,Time).show();
 Toast.makeText(MainActivity.this, "WIFI已断开", Toast.LENGTH_SHORT).show();
 ```
 
-![image-20230510113709172](assets/image-20230510113709172.png)
+![image-20230510113709172](https://img-blog.csdnimg.cn/a3f0f9cdc34148ee9272961359f853c1.jpeg)
 
 ### 实战演练-实现注册页面效果
 
 > 代码看一下
 
-![image-20230510113813246](assets/image-20230510113813246.png)
+![image-20230510113813246](https://img-blog.csdnimg.cn/16ad1642b5bd498dbc5ae88accdab5a5.jpeg)
 
-![image-20230510113848565](assets/image-20230510113848565.png)
+![image-20230510113848565](https://img-blog.csdnimg.cn/74aae13e37be4904b683342b0a616225.jpeg)
 
 
 
@@ -872,7 +872,7 @@ ArrayAdapter也是BaseAdapter的子类，用法与SimpleAdapter类似，开发�
 
    Activity将被清理出内存。
 
-![image-20230510203244112](assets/image-20230510203244112.png)
+![image-20230510203244112](https://img-blog.csdnimg.cn/73cda2a3d0c64132a9dc02613641cb7a.jpeg)
 
 ### 生命周期方法
 
@@ -1159,7 +1159,7 @@ Fragment不能独立存在，必须嵌入到Activity中使用，所以Fragment�
 * 当添加时，Fragment处于启动状态。
 * 当删除时，Fragment处于销毁状态。
 
-![image-20230512203751671](assets/image-20230512203751671.png)
+![image-20230512203751671](https://img-blog.csdnimg.cn/47a12d485e4f4e7b8d6dde420bbae0c3.jpeg)
 
 * onAttach()：当fragment和activity建立关联的时候调用
 * onCreateView()：为fragment创建视图调用，在onCreate之后
@@ -1398,7 +1398,7 @@ SQLite是Android自带的一个轻量级的数据库，运算速度快，占用�
 
 ### 定义/作用★
 
-![image-20230511092338112](assets/image-20230511092338112.png)
+![image-20230511092338112](https://img-blog.csdnimg.cn/3680436cb8b74fe49a13c5ccc4da7eb6.jpeg)
 
 内容提供者（ContentProvider）是Android系统四大组件之一，它是不同应用程序之间进行数据共享的标准API，通过ContentResolver类可以访问ContentProvider中共享的数据。
 
@@ -1408,13 +1408,13 @@ SQLite是Android自带的一个轻量级的数据库，运算速度快，占用�
 
 ### 数据模型
 
-![image-20230511092437523](assets/image-20230511092437523.png)
+![image-20230511092437523](https://img-blog.csdnimg.cn/0d9bc5963a1940d58ded8ba2aafa40d0.jpeg)
 
 ContentProvider 使用基于数据库模型的简单表格来提供需要共享的数据，在该表格中，每一行表示一条记录，而每一列代表特定类型和含义的数据，并且其中每一条数据记录都包含一个名为“_ID”的字段类标识每条数据。
 
 ### Uri
 
-![image-20230511092627398](assets/image-20230511092627398.png)
+![image-20230511092627398](https://img-blog.csdnimg.cn/b08f1a7775b7493099230ef9d3951979.jpeg)
 
 #### 定义
 
@@ -1489,7 +1489,7 @@ MyContentProvider.java文件
 
 ### 定义/作用★
 
-![image-20230511094005292](assets/image-20230511094005292.png)
+![image-20230511094005292](https://img-blog.csdnimg.cn/bd1e98b018cc4372bd8c0a63a0513d01.jpeg)
 
 内容观察者（ContentObserver）用于观察指定Uri所代表的数据的变化
 
@@ -1513,7 +1513,7 @@ Android中的广播(Broadcast)机制用于进程/线程间通信，该机制使�
 
 ## 实现流程
 
-![image-20230511094733745](assets/image-20230511094733745.png)
+![image-20230511094733745](https://img-blog.csdnimg.cn/6185ac7b99fd41e780f448dad6dafe75.jpeg)
 
 1. 广播接收者通过Binder机制在AMS(Activity Manager Service)中进行注册。
 2. 广播发送者通过Binder机制向AMS发送广播。
@@ -1657,7 +1657,7 @@ Service（服务）是Android四大组件之一，能够在后台长时间执行
 
 使用不同的方式启动服务，其生命周期会不同。
 
-![image-20230511122108615](assets/image-20230511122108615.png)
+![image-20230511122108615](https://img-blog.csdnimg.cn/4f0d56bff1b2413f81f249a25cd85a97.jpeg)
 
 * 开启服务的方法分别为startService()、bindService()，当通过startService()方法启动服务时，执行的生命周期方法依次为onCreate()、onStartCommand()、onDestroy()。
 * 当通过bindService()方法启动服务时，执行的生命周期方法依次为onCreate()、onBind()、onUnbind()、onDestroy()。
@@ -1875,7 +1875,7 @@ public void tipDialog() {
 
 1. 1-2 简述Android源代码的编译过程
 
-   ![image-20230512194003632](assets/image-20230512194003632.png)
+   ![image-20230512194003632](https://img-blog.csdnimg.cn/6e29456df3ee41d1ad088a7a8b940c42.jpeg)
 
    Java源文件经过JDK编译器编译为class文件后，Dalvik虚拟机中的Dx工具会将部分class文件转换成dex文件，dex文件还会在Dalvik虚拟机中进一步优化成odex文件。
 
@@ -1885,7 +1885,7 @@ public void tipDialog() {
 
 3. 8-1 简述Service的两种启动方式
 
-   ![image-20230511122108615](assets/image-20230511122108615.png)
+   ![image-20230511122108615](https://img-blog.csdnimg.cn/2e1a5631c26845728fcef32172a5d858.jpeg)
 
    Service的启动方式分别可以调用startService()、bindService()方法，这两个启动方式的区别如下所示：
 
